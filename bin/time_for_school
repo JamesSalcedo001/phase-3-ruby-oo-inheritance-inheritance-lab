@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+# !/usr/bin/env ruby
 
 require_relative "../lib/user"
 require_relative "../lib/teacher"
@@ -14,7 +14,17 @@ avi.last_name = "Flombaum"
 
 
 some_knowledge = avi.teach 
-
 steve.learn(some_knowledge)
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+# puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Salcedo"
+
+james = Student.new
+james.first_name = "James"
+james.last_name = "Salcedo"
+
+puts james.knowledge
+puts steve.knowledge
